@@ -5,7 +5,9 @@ data/val/
 data/test/
 
 # ── Trained model checkpoints (large .pth files) ─────────────────────────
-outputs/checkpoints/
+# outputs/checkpoints/ is excluded EXCEPT best_model.pth which is needed for deployment
+outputs/checkpoints/last_model.pth
+outputs/checkpoints/checkpoint_*.pth
 
 # ── Generated plots and logs (reproducible, no need to share) ────────────
 outputs/plots/
@@ -39,3 +41,9 @@ desktop.ini
 .idea/
 *.suo
 *.user
+
+# ── Deployment scripts (not needed in repo) ───────────────────────────────
+hf_deploy.py
+
+# ── Render build cache ────────────────────────────────────────────────────
+.render/

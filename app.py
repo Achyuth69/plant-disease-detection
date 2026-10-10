@@ -730,4 +730,6 @@ if __name__ == "__main__":
     print("  Open   : http://127.0.0.1:7860\n")
     demo = build_ui()
     demo.queue()
-    demo.launch(server_name="127.0.0.1", server_port=7860, show_error=True, share=False)
+    port = int(os.environ.get("PORT", os.environ.get("GRADIO_SERVER_PORT", 7860)))
+    host = os.environ.get("GRADIO_SERVER_NAME", "127.0.0.1")
+    demo.launch(server_name=host, server_port=port, show_error=True, share=False)
