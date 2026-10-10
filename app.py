@@ -578,7 +578,7 @@ footer { display: none !important; }
 # Build UI
 # ─────────────────────────────────────────────────────────────────────────────
 def build_ui() -> gr.Blocks:
-    with gr.Blocks(title="🌿 PlantGuard AI", css=CSS) as demo:
+    with gr.Blocks(title="🌿 PlantGuard AI") as demo:
 
         # ── Desktop Navbar ────────────────────────────────────────────────
         gr.HTML("""
@@ -727,9 +727,9 @@ if __name__ == "__main__":
     print("=" * 52)
     print(f"  Device : {DEVICE}")
     print(f"  Model  : {BEST_CKPT}")
-    print("  Open   : http://127.0.0.1:7860\n")
+    port = int(os.environ.get("PORT", os.environ.get("GRADIO_SERVER_PORT", 7860)))
+    host = "0.0.0.0" if os.environ.get("PORT") else "127.0.0.1"
+    print(f"  Host   : {host}:{port}\n")
     demo = build_ui()
     demo.queue()
-    port = int(os.environ.get("PORT", os.environ.get("GRADIO_SERVER_PORT", 7860)))
-    host = os.environ.get("GRADIO_SERVER_NAME", "127.0.0.1")
-    demo.launch(server_name=host, server_port=port, show_error=True, share=False)
+    demo.launch(server_name=host, server_port=port, show_error=True, share=False, css=CSS)
