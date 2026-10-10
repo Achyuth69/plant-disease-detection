@@ -1,8 +1,8 @@
-# PlantGuard AI — compatible with Python 3.11, 3.12, 3.13+
+# PlantGuard AI — Render.com (Python 3.14 compatible)
 
 torch>=2.2.0
 torchvision>=0.17.0
 Pillow>=10.0.0
 matplotlib>=3.8.0
-gradio==4.44.1
+gradio>=5.0.0
 numpy>=1.26.0

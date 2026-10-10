@@ -657,7 +657,7 @@ def build_ui() -> gr.Blocks:
                 with gr.Group(elem_classes=["panel-card"]):
                     gr.HTML('<div class="panel-section-title">📷 Upload Leaf Photo</div>')
                     img_input = gr.Image(
-                        type="pil", label=None, show_label=False,
+                        type="pil", label="Upload Leaf Photo",
                         height=280, elem_classes=["image-container"],
                     )
 
@@ -685,12 +685,12 @@ def build_ui() -> gr.Blocks:
                     with gr.TabItem("🩺  Diagnosis"):
                         info_out = gr.HTML(value=_placeholder_html())
                     with gr.TabItem("📊  Confidence"):
-                        chart_out = gr.Image(show_label=False)
+                        chart_out = gr.Image(label="Confidence Chart")
                     with gr.TabItem("📋  All Results"):
                         table_out = gr.Dataframe(
                             headers=["#", "Disease / Condition", "Severity", "Confidence"],
                             datatype=["str", "str", "str", "str"],
-                            interactive=False, show_label=False,
+                            interactive=False, label="Results",
                         )
 
         # ── Desktop Footer ────────────────────────────────────────────────
