@@ -1,17 +1,8 @@
-# PlantGuard AI — Render.com production requirements
+# PlantGuard AI — compatible with Python 3.11, 3.12, 3.13+
 
-# ── Deep learning (unpinned — lets pip pick compatible version) ───────────────
-torch
-torchvision
-
-# ── Image processing ──────────────────────────────────────────────────────────
-Pillow
-
-# ── Visualisation ─────────────────────────────────────────────────────────────
-matplotlib
-
-# ── Web application ───────────────────────────────────────────────────────────
+torch>=2.2.0
+torchvision>=0.17.0
+Pillow>=10.0.0
+matplotlib>=3.8.0
 gradio==4.44.1
-
-# ── Numpy (compatible with torch) ────────────────────────────────────────────
-numpy
+numpy>=1.26.0
