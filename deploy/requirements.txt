@@ -1,0 +1,9 @@
+# PlantGuard AI — Hugging Face Spaces requirements
+# HF Spaces installs these automatically on deploy
+
+torch==2.2.2
+torchvision==0.17.2
+gradio==4.44.1
+Pillow==10.3.0
+matplotlib==3.8.4
+numpy==1.26.4

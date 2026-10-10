@@ -1,0 +1,41 @@
+# ── Dataset (never commit — too large, ~800 MB) ───────────────────────────
+data/raw/
+data/train/
+data/val/
+data/test/
+
+# ── Trained model checkpoints (large .pth files) ─────────────────────────
+outputs/checkpoints/
+
+# ── Generated plots and logs (reproducible, no need to share) ────────────
+outputs/plots/
+outputs/training_log.csv
+outputs/training_history.json
+outputs/classification_report.txt
+outputs/confusion_matrix.npy
+outputs/predictions.csv
+
+# ── Python cache ──────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# ── Virtual environment ───────────────────────────────────────────────────
+venv/
+env/
+.venv/
+
+# ── Jupyter checkpoints ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── OS files ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE files ─────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.suo
+*.user

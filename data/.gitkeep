@@ -1,0 +1,3 @@
+This folder is intentionally empty.
+Run:  python src/kaggle_download.py --skip_download
+to populate data/train, data/val, data/test after manually placing the PlantVillage folder in data/raw/.
