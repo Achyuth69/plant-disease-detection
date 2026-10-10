@@ -2,7 +2,7 @@
 ## Using Batch-Normalized Convolutional Neural Networks
 
 > **Project-Based Learning (PBL) | Deep Learning Subject**
-> Academic Year 2025–26
+> Academic Year 2026-27
 
 ---
 
